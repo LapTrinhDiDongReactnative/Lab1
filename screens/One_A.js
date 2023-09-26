@@ -5,115 +5,152 @@ import {
   StyleSheet,
   TouchableOpacity,
   Dimensions,
+  Image,
 } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 const One_A = props => {
   const {navigation, route} = props;
   const {navigate, goBack} = navigation;
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <View style={styles.circle} />
-        <Text style={styles.title}>GROW YOUR BUSINESS</Text>
-      </View>
-      <View style={styles.content}>
-        <Text style={styles.subtitle}>
-          We will help you to grow your business using online server
-        </Text>
+    <LinearGradient
+      style={{
+        height: screenHeight,
+        width: screenWidth,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'transparent',
+        overflow: 'hidden',
+      }}
+      locations={[0, 0.3, 0.85, 1]}
+      colors={['#c7f4f6', '#d1f4f6', '#e5f4f5', '#00ccf9']}
+      useAngle={true}
+      angle={180}>
+      <View
+        style={{
+          width: screenWidth,
+          height: screenHeight,
+          overflow: 'hidden',
+        }}>
+        <Image
+          style={{
+            top: screenHeight * 0.13,
+            left: screenWidth / 2 - 75,
+            width: 150,
+            height: 150,
+            position: 'absolute',
+          }}
+          resizeMode="cover"
+          source={require('../assets/ellipse-8.png')}
+        />
+        <View
+          style={{
+            top: screenHeight * 0.35,
+            position: 'absolute',
+            left: 0,
+            height: screenHeight * 0.35,
+            width: screenWidth,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Text
+            style={{
+              textAlign: 'center',
+              color: '#000',
+              fontFamily: 'Roboto-Bold',
+              fontWeight: '700',
+              fontSize: 25,
+            }}>{`GROW\nYOUR BUSINESS`}</Text>
+
+          <Text
+            style={{
+              marginTop: screenHeight * 0.05,
+              fontSize: 15,
+              textAlign: 'center',
+              color: '#000',
+              fontFamily: 'Roboto-Bold',
+              fontWeight: '700',
+            }}>{`We will help you to grow your business using\nonline server`}</Text>
+        </View>
+
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-around',
-            width: 350,
-            marginTop: 40,
+            width: screenWidth,
+            position: 'absolute',
+            top: screenHeight * 0.7,
           }}>
           <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigate('One_B')}>
-            <Text style={styles.buttonText}>LOGIN</Text>
+            onPress={() => {
+              navigate('One_B');
+            }}>
+            <View
+              style={{
+                backgroundColor: '#e3c000',
+                height: 48,
+                width: 119,
+                justifyContent: 'center',
+              }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  textAlign: 'center',
+                  color: '#000',
+                  fontFamily: 'Roboto-Bold',
+                  fontWeight: '700',
+                }}>
+                LOGIN
+              </Text>
+            </View>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>SIGN UP</Text>
-          </TouchableOpacity>
+
+          <View
+            style={{
+              backgroundColor: '#e3c000',
+              height: 48,
+              width: 119,
+              justifyContent: 'center',
+            }}>
+            <Text
+              style={{
+                fontSize: 20,
+                textAlign: 'center',
+                color: '#000',
+                fontFamily: 'Roboto-Bold',
+                fontWeight: '700',
+              }}>
+              SIGN UP
+            </Text>
+          </View>
         </View>
-        <Text
+        <View
           style={{
-            color: 'black',
-            fontSize: 20,
-            fontFamily: 'Roboto',
-            fontWeight: '700',
-            textAlign: 'center',
-            marginTop: 10,
-            textAlignVertical: 'center',
-            textTransform: 'uppercase',
+            width: screenWidth,
+            height: screenHeight * 0.11,
+            position: 'absolute',
+            top: screenHeight * 0.8,
+            left: 0,
+            justifyContent: 'center',
+            alignItems: 'center',
           }}>
-          How WE WORK
-        </Text>
+          <Text
+            style={{
+              fontSize: 18,
+              textAlign: 'center',
+              color: '#000',
+              fontFamily: 'Roboto-Bold',
+              fontWeight: '700',
+            }}>
+            HOW WE WORK?
+          </Text>
+        </View>
       </View>
-    </View>
+    </LinearGradient>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    height: screenHeight,
-    width: screenWidth,
-    backgroundColor: '#8be8fc',
-  },
-  header: {
-    height: screenHeight * 0.55,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 50,
-  },
-  circle: {
-    top: 50,
-    width: 150,
-    height: 150,
-    borderRadius: 100,
-    borderWidth: 15,
-    borderColor: '#111',
-    position: 'absolute',
-  },
-  title: {
-    color: 'black',
-    fontSize: 35,
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    textAlign: 'center',
-    marginTop: 250,
-    width: 350,
-    textAlignVertical: 'center',
-  },
-  content: {
-    height: screenHeight * 0.4,
-    alignItems: 'center',
-    padding: 20,
-  },
-  subtitle: {
-    color: 'black',
-    fontSize: 15,
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    textAlign: 'center',
-    marginVertical: 15,
-  },
-  button: {
-    width: 119,
-    height: 48,
-    backgroundColor: '#E3C000',
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: 'black',
-    fontSize: 20,
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-  },
-});
+const styles = StyleSheet.create({});
 
 export default One_A;

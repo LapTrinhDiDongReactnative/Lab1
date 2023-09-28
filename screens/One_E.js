@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
+import {images} from '../constans';
 
 const One_E = props => {
   const {navigation, route} = props;
@@ -135,7 +136,7 @@ const One_E = props => {
             overflow: 'hidden',
           }}
           resizeMode="cover"
-          source={require('../assets/eye_pass.png')}
+          source={images.eye_pass}
         />
       </View>
       <View
@@ -180,7 +181,7 @@ const One_E = props => {
             marginHorizontal: 13,
           }}
           resizeMode="cover"
-          source={require('../assets/rdbMale.png')}
+          source={images.rdbMale}
         />
         <Text
           style={{
@@ -199,7 +200,7 @@ const One_E = props => {
             marginHorizontal: 13,
           }}
           resizeMode="cover"
-          source={require('../assets/rdbFemale.png')}
+          source={images.rdbFemale}
         />
         <Text
           style={{

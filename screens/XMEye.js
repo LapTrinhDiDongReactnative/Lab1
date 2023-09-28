@@ -1,5 +1,6 @@
 import {Image, StyleSheet, Text, View, Dimensions} from 'react-native';
 import React from 'react';
+import {images} from '../constans';
 
 const XMEye = props => {
   const {navigation, route} = props;
@@ -21,7 +22,7 @@ const XMEye = props => {
           marginVertical: screenHeight * 0.05,
         }}
         resizeMode="cover"
-        source={require('../assets/eyeball.png')}
+        source={images.eyeball}
       />
 
       <View style={{}}>
@@ -40,7 +41,7 @@ const XMEye = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/user2.png')}
+            source={images.user2}
           />
           <Text
             style={{
@@ -82,7 +83,7 @@ const XMEye = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/block2.png')}
+            source={images.block2}
           />
           <Text
             style={{
@@ -217,7 +218,7 @@ const XMEye = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/addmem.png')}
+            source={images.addmem}
           />
         </View>
         <View
@@ -236,7 +237,7 @@ const XMEye = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/wifi.png')}
+            source={images.wifi}
           />
         </View>
         <View
@@ -254,7 +255,7 @@ const XMEye = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/fb2.png')}
+            source={images.fb2}
           />
         </View>
       </View>

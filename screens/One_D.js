@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
+import {images} from '../constans';
 
 const One_D = props => {
   const {navigation, route} = props;
@@ -84,7 +85,7 @@ const One_D = props => {
             overflow: 'hidden',
           }}
           resizeMode="cover"
-          source={require('../assets/eye_pass.png')}
+          source={images.eye_pass}
         />
       </View>
 
@@ -176,7 +177,7 @@ const One_D = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/icofacebook.png')}
+            source={images.icofacebook}
           />
         </View>
         <View
@@ -219,7 +220,7 @@ const One_D = props => {
               overflow: 'hidden',
             }}
             resizeMode="cover"
-            source={require('../assets/icogoogle.png')}
+            source={images.icogoogle}
           />
         </View>
       </View>

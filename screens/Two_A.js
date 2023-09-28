@@ -52,7 +52,7 @@ const Two_A = props => {
             overflow: 'hidden',
           }}
           resizeMode="cover"
-          source={require('../assets/avatar.png')}
+          source={images.avatar}
         />
         <Text
           style={{
@@ -105,7 +105,7 @@ const Two_A = props => {
             overflow: 'hidden',
           }}
           resizeMode="cover"
-          source={require('../assets/eye_pass.png')}
+          source={images.eye_pass}
         />
       </View>
 

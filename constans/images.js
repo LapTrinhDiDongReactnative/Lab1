@@ -1,4 +1,17 @@
 export default {
   Lock: require('../assets/Lock.png'),
   Mail: require('../assets/Mail.png'),
+  ellipse_8: require('../assets/ellipse-8.png'),
+  icofacebook: require('../assets/icofacebook.png'),
+  icogoogle: require('../assets/icogoogle.png'),
+  eye_pass: require('../assets/eye_pass.png'),
+  rdbMale: require('../assets/rdbMale.png'),
+  rdbFemale: require('../assets/rdbFemale.png'),
+  avatar: require('../assets/avatar.png'),
+  user2: require('../assets/user2.png'),
+  block2: require('../assets/block2.png'),
+  addmem: require('../assets/addmem.png'),
+  wifi: require('../assets/wifi.png'),
+  fb2: require('../assets/fb2.png'),
+  eyeball: require('../assets/eyeball.png'),
 };

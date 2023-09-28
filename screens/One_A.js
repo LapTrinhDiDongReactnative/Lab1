@@ -8,12 +8,14 @@ import {
   Image,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {images} from '../constans';
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 const One_A = props => {
   const {navigation, route} = props;
   const {navigate, goBack} = navigation;
   return (
+    // Phân màu theo tuyến tính
     <LinearGradient
       style={{
         height: screenHeight,
@@ -42,7 +44,7 @@ const One_A = props => {
             position: 'absolute',
           }}
           resizeMode="cover"
-          source={require('../assets/ellipse-8.png')}
+          source={images.ellipse_8}
         />
         <View
           style={{

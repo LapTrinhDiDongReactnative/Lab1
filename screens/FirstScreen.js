@@ -8,6 +8,7 @@ import {
   Image,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {images} from '../constans';
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 const FirstScreen = props => {
@@ -52,7 +53,7 @@ const FirstScreen = props => {
           position: 'absolute',
         }}
         resizeMode="cover"
-        source={require('../assets/ellipse-8.png')}
+        source={images.ellipse_8}
       />
       <View
         style={{

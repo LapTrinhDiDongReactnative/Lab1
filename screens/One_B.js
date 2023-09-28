@@ -55,6 +55,7 @@ const One_B = props => {
             width: 200,
             textAlignVertical: 'center',
             marginVertical: 25,
+            fontFamily: 'Roboto-Bold',
           }}>
           Forgot Password
         </Text>
@@ -67,6 +68,7 @@ const One_B = props => {
             width: 350,
             textAlignVertical: 'center',
             marginVertical: 15,
+            fontFamily: 'Roboto-Bold',
           }}>
           Provide your account's email for which you want to reset your password
         </Text>

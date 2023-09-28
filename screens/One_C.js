@@ -34,39 +34,34 @@ const One_C = props => {
           width: screenWidth,
           overflow: 'hidden',
         }}>
-        <View
+        <Text
           style={{
-            height: screenHeight * 0.4,
-            width: screenWidth,
-            justifyContent: 'center',
-            alignItems: 'center',
+            marginTop: screenHeight * 0.13,
+            marginBottom: screenHeight * 0.08,
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            color: 'black',
+            fontSize: 49,
+            fontWeight: 'bold',
+            fontFamily: 'Roboto-Bold',
           }}>
-          <Text
-            style={{
-              marginTop: 18,
-              textAlign: 'center',
-              textTransform: 'uppercase',
-              color: 'black',
-              fontSize: 48,
-              fontWeight: 'bold',
-            }}>
-            Code
-          </Text>
-        </View>
+          Code
+        </Text>
 
         <Text
           style={{
             textAlign: 'center',
             textTransform: 'uppercase',
             color: 'black',
-            fontSize: 16,
+            fontSize: 19,
             fontWeight: 'bold',
+            fontFamily: 'Roboto-Bold',
           }}>
           Verification
         </Text>
         <Text
           style={{
-            marginTop: 25,
+            marginTop: screenHeight * 0.09,
             textAlign: 'center',
             fontSize: 16,
             fontWeight: 'bold',
@@ -85,6 +80,7 @@ const One_C = props => {
         </Text>
         <View
           style={{
+            marginVertical: screenHeight * 0.05,
             flexDirection: 'row',
             width: screenWidth,
             justifyContent: 'center',

@@ -24,7 +24,7 @@ const One_D = props => {
       }}>
       <Text
         style={{
-          marginTop: screenHeight * 0.05,
+          marginTop: screenHeight * 0.08,
           fontSize: 25,
           fontFamily: 'Roboto-Bold',
           fontWeight: '700',
@@ -35,10 +35,8 @@ const One_D = props => {
       </Text>
       <View
         style={{
-          height: 54,
-          width: 330,
-          borderColor: '#f2f2f2',
-          borderWidth: 1,
+          height: screenHeight * 0.072,
+          width: screenWidth - 40,
           borderStyle: 'solid',
           backgroundColor: 'rgba(196, 196, 196, 0.3)',
           paddingHorizontal: 15,
@@ -59,17 +57,15 @@ const One_D = props => {
       </View>
       <View
         style={{
-          height: 54,
-          width: 330,
-          borderColor: '#f2f2f2',
-          borderWidth: 1,
+          height: screenHeight * 0.072,
+          width: screenWidth - 40,
           borderStyle: 'solid',
           backgroundColor: 'rgba(196, 196, 196, 0.3)',
           paddingHorizontal: 15,
           flexDirection: 'row',
           alignItems: 'center',
           alignSelf: 'center',
-          marginTop: screenHeight * 0.07,
+          marginTop: screenHeight * 0.04,
           justifyContent: 'space-between',
         }}>
         <Text
@@ -83,8 +79,8 @@ const One_D = props => {
         </Text>
         <Image
           style={{
-            width: 38,
-            height: 36,
+            width: 30,
+            height: 27,
             overflow: 'hidden',
           }}
           resizeMode="cover"
@@ -122,102 +118,112 @@ const One_D = props => {
         </View>
       </TouchableOpacity>
 
+      <Text
+        style={{
+          color: '#000',
+          fontSize: 14,
+          textAlign: 'center',
+          fontFamily: 'Roboto-Regular',
+          alignSelf: 'center',
+          marginTop: screenHeight * 0.03,
+          marginBottom: screenHeight * 0.01,
+        }}>
+        When you agree to terms and conditions
+      </Text>
+      <Text
+        style={{
+          color: '#5d25fa',
+          fontSize: 14,
+          textAlign: 'center',
+          fontFamily: 'Roboto-Regular',
+          marginVertical: screenHeight * 0.01,
+        }}>
+        For got your password?
+      </Text>
+      <Text
+        style={{
+          color: '#000',
+          fontSize: 14,
+          textAlign: 'center',
+          fontFamily: 'Roboto-Regular',
+          marginBottom: screenHeight * 0.01,
+        }}>
+        Or login with
+      </Text>
+
       <View
         style={{
-          top: 524,
-          left: 19,
-          position: 'absolute',
-          width: 328,
-          height: 45,
+          width: screenWidth,
+          height: screenHeight * 0.072,
+          flexDirection: 'row',
+          justifyContent: 'center',
         }}>
         <View
           style={{
-            left: 0,
-            width: 328,
-            height: 45,
-            top: 0,
-            left: 0,
-            position: 'absolute',
+            backgroundColor: '#25479b',
+            width: screenWidth / 3.5,
+            height: screenHeight * 0.07,
+            borderRadius: 2,
+            justifyContent: 'center',
+            alignItems: 'center',
           }}>
-          <View
+          <Image
             style={{
-              backgroundColor: '#25479b',
-              left: 0,
-              width: 110,
-              top: 0,
-              height: 45,
-              borderRadius: 2,
-              position: 'absolute',
+              marginRight: 10,
+              marginBottom: 3,
+              width: screenHeight * 0.05,
+              height: screenHeight * 0.05,
+              overflow: 'hidden',
             }}
+            resizeMode="cover"
+            source={require('../assets/icofacebook.png')}
           />
-          <View
+        </View>
+        <View
+          style={{
+            backgroundColor: '#0f8ee0',
+            width: screenWidth / 3.5,
+            height: screenHeight * 0.07,
+            borderRadius: 2,
+          }}>
+          <Text
             style={{
-              left: 108,
-              backgroundColor: '#0f8ee0',
-              width: 110,
-              top: 0,
-              height: 45,
-              borderRadius: 2,
+              fontSize: 50,
+              color: '#fff',
+              fontFamily: 'Roboto-Bold',
+              fontWeight: '700',
+              textAlign: 'center',
               position: 'absolute',
-            }}
-          />
-          <View
+              top: -12,
+              left: 42,
+            }}>
+            z
+          </Text>
+        </View>
+        <View
+          style={{
+            borderColor: '#0680f1',
+            borderWidth: 1,
+            borderStyle: 'solid',
+            backgroundColor: '#fff',
+            width: screenWidth / 3.5,
+            height: screenHeight * 0.07,
+            borderRadius: 2,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Image
             style={{
-              left: 218,
-              borderColor: '#0680f1',
-              borderWidth: 1,
-              borderStyle: 'solid',
-              width: 110,
-              backgroundColor: '#fff',
-              width: 110,
-              top: 0,
-              height: 45,
-              borderRadius: 2,
-              position: 'absolute',
+              width: screenHeight * 0.05,
+              height: screenHeight * 0.05,
+              overflow: 'hidden',
             }}
+            resizeMode="cover"
+            source={require('../assets/icogoogle.png')}
           />
         </View>
       </View>
 
-      <Image
-        style={{
-          top: 528,
-          width: 30,
-          height: 30,
-          left: 50,
-          position: 'absolute',
-          overflow: 'hidden',
-        }}
-        resizeMode="cover"
-        source={require('../assets/icofacebook.png')}
-      />
-      <Image
-        style={{
-          top: 529,
-          left: 270,
-          width: 35,
-          height: 35,
-          position: 'absolute',
-          overflow: 'hidden',
-        }}
-        resizeMode="cover"
-        source={require('../assets/icogoogle.png')}
-      />
-
-      <Text
-        style={{
-          top: 514,
-          left: 144,
-          fontSize: 50,
-          width: 69,
-          color: '#fff',
-          fontFamily: 'Roboto-Bold',
-          fontWeight: '700',
-          textAlign: 'center',
-          position: 'absolute',
-        }}>
-        z
-      </Text>
       <View
         style={{
           backgroundColor: 'rgba(49, 170, 82, 0.19)',
@@ -230,52 +236,6 @@ const One_D = props => {
           zIndex: -100,
         }}
       />
-      <Text
-        style={{
-          top: 397,
-          left: 36,
-          color: '#000',
-          width: 260,
-          fontSize: 14,
-          height: 20,
-          width: 260,
-          fontSize: 14,
-          textAlign: 'center',
-          fontFamily: 'Roboto-Regular',
-          position: 'absolute',
-        }}>
-        When you agree to terms and conditions
-      </Text>
-      <Text
-        style={{
-          top: 464,
-          left: 45,
-          color: '#000',
-          width: 260,
-          fontSize: 14,
-          height: 20,
-          width: 260,
-          fontSize: 14,
-          textAlign: 'center',
-          fontFamily: 'Roboto-Regular',
-          position: 'absolute',
-        }}>
-        Or login with
-      </Text>
-      <Text
-        style={{
-          top: 430,
-          color: '#5d25fa',
-          left: 50,
-          height: 20,
-          width: 260,
-          fontSize: 14,
-          textAlign: 'center',
-          fontFamily: 'Roboto-Regular',
-          position: 'absolute',
-        }}>
-        For got your password?
-      </Text>
     </Pressable>
   );
 };
